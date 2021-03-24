@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rock Paper Scissors</title>
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css" integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w==" crossorigin="anonymous" />
+    </head>
+    <body>
+        <header class="header">
+            <h1>Rock, Paper, Scissors!</h1>
+            <h3>First one to 5 points wins!</h3>
+        </header>
+        <div class="score-contain">
+            <p class="score-message">Its a tie!</p>
+        </div>
+        <div class="span-contain">
+            <div class="player-contain">
+                <span>Player: </span>
+                <span class="player-score">0</span>
+            </div>
+            <div class="computer-contain">
+                <span>Computer: </span>
+                <span class="computer-score">0</span>
+            </div>
+        </div>
+        <div class="choices">
+            <button class="choice" id="rock">
+                <i class="fas fa-hand-rock"></i>
+            </button>
+            <button class="choice" id="paper">
+                <i class="fas fa-hand-paper"></i>
+            </button>
+            <button class="choice" id="scissors">
+                <i class="fas fa-hand-scissors"></i>
+            </button>
+        </div>
+        <div class="reset-contain">
+            <button class="reset-button" id="animation">Reset</button>
+        </div>
+        <script src="app.js"></script>
+    </body>
+</html>
+
+

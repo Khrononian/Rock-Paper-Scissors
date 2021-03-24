@@ -1,0 +1,131 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #343434;
+    font-size: 20px;
+    font-family: Indie Flower, sans-serif;
+}
+
+header {
+    text-align: center;
+    color: #0E4A92;
+    background: #282828;
+    padding: 1.5rem;
+    border-bottom: 2px solid #0E4A92;
+}
+header h3 {
+    padding-top: 1rem;
+}
+
+.score-contain,
+.span-contain {
+    font-size: 1.8rem;
+    text-align: center;
+    margin-top: 1.8rem;
+}
+.span-contain {
+    width: 400px;
+    margin-right: auto;
+    margin-left: auto;
+    display: flex;
+    justify-content: space-between;
+}
+.player-contain,
+.computer-contain {
+    display: inline-block;
+    border: 2px solid #0E4A92;
+    padding: .5rem 1rem;
+}
+
+.choices {
+    margin-top: 3rem;
+    text-align: center;
+}
+.choice {
+    padding: 1rem;
+    background: #202020;
+    border: 2px solid #265a9a;
+    color: white;
+}
+#paper {
+    margin-right: 2rem;
+    margin-left: 2rem;
+}
+.fas {
+    font-size: 4rem;
+}
+.reset-contain {
+    text-align: center;
+    
+}
+.reset-button {
+    padding: .8rem;
+    margin-top: 2rem;
+    background: #202020;
+    border: 2px solid darkred;
+    font-family: Indie Flower, sans-serif;
+    font-size: 1.2rem;
+    box-shadow: 0 0 0px 0px rgba(139, 0, 0, 0);
+    visibility: hidden;
+}
+
+
+
+.red-anim {
+    box-shadow: 0 0 0px 0px rgba(139, 0, 0, 0);
+    animation: pulse 2s infinite;
+    border: 2px solid rgba(139, 0, 0, 0.5);
+}
+.red-anim:hover {
+    animation: none;
+}
+@keyframes pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgba(139, 0, 0, 0);
+    }
+    70% {
+        box-shadow: 0 0 10px 10px rgba(139, 0, 0, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(139, 0, 0, 0);
+    }
+}
+
+.green-anim {
+    box-shadow: 0 0 0 0 rgba(0, 105, 0, 0);
+    border: 2px solid rgb(0, 105, 0);
+    animation: green-pulse 2s infinite;
+}
+.green-anim:hover {
+    animation: none;
+}
+@keyframes green-pulse {
+    0% {
+        box-shadow: 0 0 0 0 rgb(0, 105, 0, 0);
+    }
+    70% {
+        box-shadow: 0 0 10px 10px rgb(0, 105, 0, 0.5);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgb(0, 105, 0, 0)
+    }
+}
+
+
+.green {
+    border: 2px solid darkgreen;
+    box-shadow: 0 0 15px 7px darkgreen;
+}
+
+.red {
+    border: 2px solid darkred;
+    box-shadow: 0 0 15px 7px darkred;
+}
+
