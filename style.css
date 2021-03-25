@@ -15,10 +15,10 @@ body {
 
 header {
     text-align: center;
-    color: #0E4A92;
+    color: crimson;
     background: #282828;
     padding: 1.5rem;
-    border-bottom: 2px solid #0E4A92;
+    border-bottom: 2px solid crimson;
 }
 header h3 {
     padding-top: 1rem;
@@ -28,7 +28,7 @@ header h3 {
 .span-contain {
     font-size: 1.8rem;
     text-align: center;
-    margin-top: 1.8rem;
+    margin-top: 1rem;
 }
 .span-contain {
     width: 400px;
@@ -40,7 +40,7 @@ header h3 {
 .player-contain,
 .computer-contain {
     display: inline-block;
-    border: 2px solid #0E4A92;
+    border: 2px solid crimson;
     padding: .5rem 1rem;
 }
 
@@ -51,7 +51,7 @@ header h3 {
 .choice {
     padding: 1rem;
     background: #202020;
-    border: 2px solid #265a9a;
+    border: 2px solid crimson;
     color: white;
 }
 #paper {
@@ -75,8 +75,19 @@ header h3 {
     box-shadow: 0 0 0px 0px rgba(139, 0, 0, 0);
     visibility: hidden;
 }
+.winner-contain {
+    text-align: center;
+    font-size: 2.2rem;
+    color: crimson;
+    margin-top: .5rem;
+}
+.winner-message {
+    visibility: hidden;
+}
 
 
+
+/* JS Additions to files */
 
 .red-anim {
     box-shadow: 0 0 0px 0px rgba(139, 0, 0, 0);
