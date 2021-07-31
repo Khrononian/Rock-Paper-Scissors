@@ -1,1 +1,3 @@
-# Simple rock paper scissors game made from the odin project.
+# Rock, Paper, Scissors
+
+Simple game made from the Odin Project with HTML, Css and Javascript
