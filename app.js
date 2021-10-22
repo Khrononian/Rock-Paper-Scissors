@@ -9,22 +9,18 @@
  let paperChoice = document.getElementById("paper");
  let scissorsChoice = document.getElementById("scissors");
 
-
-
 // Random Computer Selections
 function computerPlay() {
     let selections = ["rock", "paper", "scissors"];
     let random = [Math.floor(Math.random() * selections.length)]
     return selections[random];
 }
-console.log(computerPlay())
 
 function choiceWord(selection) {
     if (selection === "rock") return "Rock"
     if (selection === "paper") return "Paper"
     return "Scissors";
 }
-
 
 // Checks for a win
 function win(user, computer) {
@@ -89,7 +85,6 @@ function game(user) {
         scissorsChoice.disabled = true;
         reset.style.visibility = "visible";
         if (playerScore > 4) {
-            console.log("Player Wins!")
             document.getElementById("animation").classList.add("green-anim")
             document.querySelector(".winner-message").innerText = "Player Wins!"
             document.querySelector(".winner-message").style.visibility = "visible"
@@ -107,7 +102,6 @@ function game(user) {
                 return;
             })
         } else if (computerScore > 4) {
-            console.log("Player Lost!")
             document.getElementById("animation").classList.add("red-anim");
             document.querySelector(".winner-message").innerText = "Computer Wins!";
             document.querySelector(".winner-message").style.visibility = "visible";
@@ -128,7 +122,6 @@ function game(user) {
     }
 }
 
-
 // Choice event listeners
 function main() {
     rockChoice.addEventListener("click", () => game("rock"));
@@ -136,9 +129,3 @@ function main() {
     scissorsChoice.addEventListener("click", () => game("scissors"));
 }
 main()
-
-
-
-
-
-
